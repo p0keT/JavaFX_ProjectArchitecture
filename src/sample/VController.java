@@ -17,12 +17,12 @@ import java.io.IOException;
 public class VController implements IView{
     @FXML
     private Button ButWork;
-
     String[] str={""};
 
     @Override
     public void putText(String[] str) {
         this.str = str;
+        System.out.println("put"+str[0]);
     }
 
     @Override
@@ -36,7 +36,9 @@ public class VController implements IView{
     }
     @FXML
     public void initialize(){
-        new MainController(getInstance());
+        MainController mc = new MainController(getInstance());
+
+
 
     }
 

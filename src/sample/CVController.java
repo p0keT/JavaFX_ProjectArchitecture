@@ -1,6 +1,8 @@
 package sample;
 
-
+/**
+ * Created by Sergiy on 5/23/2017.
+ */
 public class CVController implements IView {
     String[] args;
 
